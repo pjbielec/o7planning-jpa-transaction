@@ -17,7 +17,7 @@ public class MainController {
     @Autowired
     private BankAccountDAO bankAccountDAO;
 
-    @GetMapping(value = "/sendMoney")
+    @GetMapping(value = "/")
     public String viewSendMoneyPage(Model model){
 
         SendMoneyForm form = new SendMoneyForm(1L, 2L, 700d);
